@@ -1,0 +1,16 @@
+#@ load("@ytt:data", "data")
+---
+apiVersion: extensions/v1
+kind: Deployment
+metadata:
+  name: #@ data.values.project
+  labels: #@ data.values.deployment.labels
+spec:
+  replicas: #@ data.values.deployment.replica
+  template:
+    metadata:
+      
+      labels: #@ data.values.deployment.labels
+    spec:
+      containers: #@ data.values.deployment.containers
+

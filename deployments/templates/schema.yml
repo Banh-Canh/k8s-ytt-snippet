@@ -1,0 +1,10 @@
+#@data/values-schema
+---
+project: ""
+deployment:
+  replica: 1
+  #@schema/type any=True
+  labels: null
+  #@schema/type any=True
+  containers:
+    - name: ""
