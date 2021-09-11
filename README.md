@@ -2,6 +2,7 @@
 
 https://carvel.dev/ytt/
 
-In the chosen folder (ex: deployment)
+To generate k8s-ready manifests, in the chosen folder (ex: deployment), run: 
 
-ytt -f values.yml -f templates/ to generate k8s-ready manifests.
+```ytt -f values.yml -f templates/```
+
